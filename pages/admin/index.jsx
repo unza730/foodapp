@@ -48,7 +48,7 @@ const Index = ({ order, product }) => {
                 </tr>
               </thead>
               {pizzaList.map((product) => (
-                <tbody>
+                <tbody key={product._id}>
                   <tr key={product._id}>
                     <td className="px-4 py-3 text-blue-900">
                       <img src={product.img} alt="" />
@@ -104,7 +104,7 @@ const Index = ({ order, product }) => {
                 </tr>
               </thead>
               {orderList.map((order) => (
-                <tbody>
+                <tbody key={order._id}>
                   <tr key={order._id}>
                     <td className="px-4 py-3 text-blue-900">
                       {order._id.slice(0, 5)}

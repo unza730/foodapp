@@ -50,10 +50,10 @@ const Order = ({ orderData }) => {
               </p>
             </div>
           </div>
-          <div class="p-4 my-5 md:my-0 w:full lg:w-1/4 md:w-1/2 h-2/6 bg-white text-black">
-            <div class="h-full flex flex-col items-center text-center">
-              <div class="w-full relative">
-                <h2 class="title-font font-medium text-3xl text-black">
+          <div  className="p-4 my-5 md:my-0 w:full lg:w-1/4 md:w-1/2 h-2/6 bg-white text-black">
+            <div  className="h-full flex flex-col items-center text-center">
+              <div  className="w-full relative">
+                <h2  className="title-font font-medium text-3xl text-black">
                   Cart Total
                 </h2>
                 <div className="flex flex-col justify-center items-center space-y-2  my-3 text-lg">
@@ -86,9 +86,9 @@ const Order = ({ orderData }) => {
         </div>
       </section>
 
-      <section class="text-white text-2xl body-font flex ">
-        <div class="container px-5 py-24  mx-auto">
-          <div class="-m-4"></div>
+      <section  className="text-white text-2xl body-font flex ">
+        <div  className="container px-5 py-24  mx-auto">
+          <div  className="-m-4"></div>
         </div>
       </section>
     </div>
