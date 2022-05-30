@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from "react";
 import {
@@ -58,7 +58,7 @@ const Cart = () => {
 
     return (
       <>
-        {showSpinner && isPending && <div className="spinner" />}
+        {showSpinner && isPending && <div  className="spinner" />}
         <PayPalButtons
           style={style}
           disabled={false}
@@ -110,61 +110,61 @@ const Cart = () => {
  // const dispatch = useDispatch();
   return (
     <div>
-      <section class="text-white body-font ">
-        <div class="container px-5 py-24 mx-auto  flex flex-wrap space-y-24 lg:space-y-0 ">
-          <div class="lg:w-2/3 w-full mx-auto overflow-auto ">
-            <table class="table-auto relative z-2 w-full text-left whitespace-no-wrap">
+      <section   className="text-white body-font ">
+        <div   className="container px-5 py-24 mx-auto  flex flex-wrap space-y-24 lg:space-y-0 ">
+          <div   className="lg:w-2/3 w-full mx-auto overflow-auto ">
+            <table   className="table-auto relative z-2 w-full text-left whitespace-no-wrap">
               <thead>
                 <tr>
-                  <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">
+                  <th   className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">
                     Product
                   </th>
-                  <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                  <th   className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
                     Name
                   </th>
-                  <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                  <th   className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
                     Extras
                   </th>
-                  <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                  <th   className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
                     Price
                   </th>
 
-                  <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                  <th   className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
                     Quantity
                   </th>
 
-                  <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                  <th   className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
                     Total
                   </th>
-                  <th class="w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br"></th>
+                  <th   className="w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br"></th>
                 </tr>
               </thead>
               <tbody>
                 {cart.products.map((product) => (
                   <tr key={product._id}>
-                    <td class="px-4 py-3">
-                      <img src={product.img} className="w-12" alt="" />
+                    <td   className="px-4 py-3">
+                      <img src={product.img}  className="w-12" alt="" />
                     </td>
-                    <td class="border-t-2 border-gray-200 px-4 py-3">
+                    <td   className="border-t-2 border-gray-200 px-4 py-3">
                       {product.title}
                     </td>
 
-                    <td class="px-4 py-3">
+                    <td   className="px-4 py-3">
                       {product.extras.map((extra) => (
                         <span key={extra._id}>{extra.text}</span>
                       ))}
                     </td>
-                    <td class="px-4 py-3 text-lg text-white">
+                    <td   className="px-4 py-3 text-lg text-white">
                       {product.price}
                     </td>
-                    <td class="px-4 py-3 text-lg text-white">
+                    <td   className="px-4 py-3 text-lg text-white">
                       {product.quantity}
                     </td>
-                    <td class="px-4 py-3 text-lg text-white">
+                    <td   className="px-4 py-3 text-lg text-white">
                       ${product.price * product.quantity}
                     </td>
 
-                    {/* <td class="w-10 text-center">
+                    {/* <td   className="w-10 text-center">
                       <input name="plan" type="radio" />
                     </td> */}
                   </tr>
@@ -173,29 +173,29 @@ const Cart = () => {
             </table>
           </div>
 
-          <div class="p-4 lg:w-1/4 md:w-1/2 h-2/6 bg-white text-black">
-            <div class="h-full flex flex-col items-center text-center">
-              <div class="w-full relative">
-                <h2 class="title-font font-medium text-3xl text-black">
+          <div   className="p-4 lg:w-1/4 md:w-1/2 h-2/6 bg-white text-black">
+            <div   className="h-full flex flex-col items-center text-center">
+              <div   className="w-full relative">
+                <h2   className="title-font font-medium text-3xl text-black">
                   Cart Total
                 </h2>
-                <div className="flex flex-col justify-center items-center space-y-2  my-3 text-lg">
-                  <div className="flex gap-3 ">
+                <div  className="flex flex-col justify-center items-center space-y-2  my-3 text-lg">
+                  <div  className="flex gap-3 ">
                     <span>Subtotal:</span>
                     <span>${cart.total}</span>
                   </div>
-                  <div className="flex gap-3">
+                  <div  className="flex gap-3">
                     <span>Discount:</span>
                     <span>$0.00</span>
                   </div>
-                  <div className="flex gap-3">
+                  <div  className="flex gap-3">
                     <span>Total:</span>
                     <span>${cart.total}</span>
                   </div>
                   {open ? (
                     <div>
                       <button
-                        className="text-white bg-[#333D79FF] border-0 py-2 px-8 focus:outline-none hover:bg-[#333D79FF] rounded mb-2"
+                         className="text-white bg-[#333D79FF] border-0 py-2 px-8 focus:outline-none hover:bg-[#333D79FF] rounded mb-2"
                         onClick={() => setCash(true)}
                       >
                         Cash on Delivery
@@ -215,9 +215,9 @@ const Cart = () => {
                       </PayPalScriptProvider>
                     </div>
                   ) : (
-                    <div className="mt-15">
+                    <div  className="mt-15">
                       <button
-                        class=" text-white bg-[#333D79FF] border-0 py-2 px-6 focus:outline-none hover:bg-[#333D79FF] rounded"
+                          className=" text-white bg-[#333D79FF] border-0 py-2 px-6 focus:outline-none hover:bg-[#333D79FF] rounded"
                         onClick={() => setOpen(!open)}
                       >
                         Checkout Now

@@ -1,12 +1,11 @@
 import axios from 'axios';
 import { useRouter } from 'next/router';
-import React, { useState } from 'react'
+import { useState } from 'react'
 
-const login = () => {
+const Login = () => {
 
     const [username, setUsername] = useState(null)
-    
-    const [password, setPassword] = useState(null);
+     const [password, setPassword] = useState(null);
     const [error, setError] = useState(false);
   
     const router = useRouter();
@@ -25,17 +24,13 @@ const login = () => {
   return (
     <div className="flex justify-center items-center my-24">
       <section className="text-gray-600 body-font ">
-        {/* <div className="container px-5 py-24 mx-auto flex flex-wrap items-center"> */}
-        {/* <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-      <h1 className="title-font font-medium text-3xl text-gray-900">Slow-carb next level shoindcgoitch ethical authentic, poko scenester</h1>
-      <p className="leading-relaxed mt-4">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock starladder roathse. Craies vegan tousled etsy austin.</p>
-    </div> */}
+        
         <div className=" bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
           <h2 className="text-gray-900 text-lg font-medium title-font mb-5">
             Sign Up
           </h2>
           <div className="relative mb-4">
-            <label for="full-name" className="leading-7 text-sm text-gray-600">
+            <label htmlFor="full-name" className="leading-7 text-sm text-gray-600">
               Full Name
             </label>
             <input
@@ -47,7 +42,7 @@ const login = () => {
             />
           </div>
           <div className="relative mb-4">
-            <label for="email" className="leading-7 text-sm text-gray-600">
+            <label htmlFor="email" className="leading-7 text-sm text-gray-600">
               Password
             </label>
             <input
@@ -73,4 +68,4 @@ const login = () => {
   );
 }
 
-export default login
+export default Login

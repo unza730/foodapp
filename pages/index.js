@@ -1,7 +1,6 @@
 import axios from 'axios';
 import Head from 'next/head'
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import Image from 'next/image'
 import Featured from '../components/Featured';
 import PizzaList from '../components/PizzaList';

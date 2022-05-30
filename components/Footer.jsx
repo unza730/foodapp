@@ -130,7 +130,7 @@ export default function Footer() {
                 @knyttneve
               </a>
             </p>
-            <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+            {/* <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
               <a className="text-[#FAEBEFFF]">
                 <svg
                   fill="currentColor"
@@ -187,6 +187,7 @@ export default function Footer() {
                 </svg>
               </a>
             </span>
+          */}
           </div>
         </div>
       </footer>
