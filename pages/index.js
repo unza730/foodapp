@@ -18,7 +18,7 @@ export default function Home({pizzaList, admin}) {
       <>
       
         <Featured />
-        {admin && <span>Hello</span>}
+        {admin && <span>Welcome To Admin Page</span>}
         <PizzaList pizzaList={pizzaList} />
        
        </>
