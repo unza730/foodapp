@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from "axios";
 import { useDispatch } from 'react-redux';
 import { addProduct } from '../../redux/cartSlice';
+
 const baseUrl = process.env.BASE_URL;
 
 const Product = ({ pizza }) => {
