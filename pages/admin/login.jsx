@@ -1,14 +1,14 @@
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import { useState } from 'react'
+ const baseUrl = process.env.BASE_URL;
 
 const Login = () => {
 
     const [username, setUsername] = useState(null)
      const [password, setPassword] = useState(null);
     const [error, setError] = useState(false);
-  const baseUrl = process.env.BASE_URL;
-
+ 
     const router = useRouter();
      const handleClick = async () => {
        try {
