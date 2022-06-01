@@ -1,5 +1,6 @@
 import Order from "../../../models/Order";
 import dbConnect from "../../../util/mongo";
+import NextCors from "nextjs-cors";
 
 export default async function handler(req, res) {
     await NextCors(req, res, {
