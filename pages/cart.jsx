@@ -12,6 +12,7 @@ import axios from 'axios';
 import OrderDetaild from '../components/OrderDetaild';
 
 // This values are the props in the UI
+const baseUrl = process.env.BASE_URL;
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
@@ -28,7 +29,7 @@ const Cart = () => {
   
   const createOrder = async (data) => {
     try {
-      const res = await axios.post("http://localhost:3000/api/orders", data);
+      const res = await axios.post(`${baseUrl}/api/orders`, data);
        console.log(res.status);
        
       if (res.status === 200) {

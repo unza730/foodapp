@@ -1,6 +1,7 @@
 import axios from 'axios';
 import Link from 'next/link';
 import { useState } from 'react'
+const baseUrl = process.env.BASE_URL;
 
 const Index = ({ order, product }) => {
   const [pizzaList, setPizzaList] = useState(product)
@@ -9,7 +10,7 @@ const Index = ({ order, product }) => {
   console.log(status);
   const handleDelete = async (id) => {
     try {
-      const res = await axios.delete(`http://localhost:3000/api/products/${id}`)
+      const res = await axios.delete(`${baseUrl}/api/products/${id}`)
       setPizzaList(pizzaList.filter((pizza => pizza._id !== id)));
     } catch (err) {
       console.log(err)
@@ -142,8 +143,8 @@ export const getServerSideProps = async (ctx) => {
       },
     };
   }
-  const productRes = await axios.get("http://localhost:3000/api/products");
-  const orderRes = await axios.get("http://localhost:3000/api/orders");
+  const productRes = await axios.get(`${baseUrl}/api/products`);
+  const orderRes = await axios.get(`${baseUrl}/api/orders`);
   return {
     props:{
       product: productRes.data,

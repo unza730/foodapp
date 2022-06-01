@@ -7,11 +7,12 @@ const Login = () => {
     const [username, setUsername] = useState(null)
      const [password, setPassword] = useState(null);
     const [error, setError] = useState(false);
-  
+  const baseUrl = process.env.BASE_URL;
+
     const router = useRouter();
      const handleClick = async () => {
        try {
-         await axios.post("http://localhost:3000/api/login", {
+         await axios.post(`${baseUrl}/api/login`, {
            username,
            password,
          });

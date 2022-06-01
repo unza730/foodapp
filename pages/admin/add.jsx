@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useState } from "react";
+const baseUrl = process.env.BASE_URL;
 
 const Add = () => {
   const [file, setFile] = useState(null);
@@ -41,8 +42,8 @@ const Add = () => {
         extra,
         extraOptions,
       };
-      await axios.post("http://localhost:3000/api/products", newProduct);
-      router.push("http://localhost:3000");
+      await axios.post(`${baseUrl}/api/products`, newProduct);
+      router.push(`${baseUrl}`);
     } catch (err) {
       console.log(err);
     }

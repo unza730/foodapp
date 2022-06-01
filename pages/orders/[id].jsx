@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react'
 import styles from "../../styles/Order.module.css";
+const baseUrl = process.env.BASE_URL;
 
 const Order = ({ orderData }) => {
   // const status = order.status
@@ -104,9 +105,7 @@ const Order = ({ orderData }) => {
   };
 }; */}
 export const getServerSideProps = async ({ params }) => {
-  const res = await axios.get(
-    `http://localhost:3000/api/orders/${params.id}`
-  );
+  const res = await axios.get(`${baseUrl}/api/orders/${params.id}`);
   return {
     props: {
       orderData: res.data,

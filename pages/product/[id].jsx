@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import axios from "axios";
 import { useDispatch } from 'react-redux';
 import { addProduct } from '../../redux/cartSlice';
+const baseUrl = process.env.BASE_URL;
+
 const Product = ({ pizza }) => {
    const [price, setPrice] = useState(pizza.price[0]);
   const [extras, setExtras] = useState([]);
@@ -140,9 +142,7 @@ const Product = ({ pizza }) => {
 
 
 export const getServerSideProps = async ({params}) => {
-  const res = await axios.get(
-    `http://localhost:3000/api/products/${params.id}`
-  );
+  const res = await axios.get(`${baseUrl}/api/products/${params.id}`);
   return {
     props: {
       pizza: res.data,
