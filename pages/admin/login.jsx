@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import { useState } from 'react'
- const baseUrl = process.env.BASE_URL;
+//  const baseUrl = process.env.BASE_URL;
+const baseUrl = process.env.BASE_URL;
 
 const Login = () => {
 
@@ -12,14 +13,14 @@ const Login = () => {
     const router = useRouter();
      const handleClick = async () => {
        try {
-         await axios.post(`${baseUrl}/api/login`, {
+         await axios.post("http://localhost:3000/api/login", {
            username,
            password,
          });
          router.push("/admin");
        } catch (err) {
            setError(true);
-           console.log(err)
+         console.log(err);
        }
      };
   return (
