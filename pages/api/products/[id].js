@@ -1,18 +1,22 @@
 import Product from "../../../models/Product";
 import dbConnect from "../../../util/mongo";
-import NextCors from "nextjs-cors";
+import Cors from 'cors';
+// import NextCors from "nextjs-cors";
 
 // Run the cors middleware
   // nextjs-cors uses the cors package, so we invite you to check the documentation https://github.com/expressjs/cors
-  await NextCors(req, res, {
-    // Options
-    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
-    origin: "*",
-    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-  });
+  // await NextCors(req, res, {
+  //   // Options
+  //   methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
+  //   origin: "*",
+  //   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+  // });
 
-  // Rest of the API logic
-  res.json({ message: "Hello NextJs Cors!" });
+  // // Rest of the API logic
+  // res.json({ message: "Hello NextJs Cors!" });
+  const cors = Cors({
+    methods: ["GET", "HEAD", "POST", "PUT", "DELETE"],
+  });
 
 export default async function handler(req, res) {
   
