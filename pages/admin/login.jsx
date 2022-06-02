@@ -13,7 +13,7 @@ const Login = () => {
     const router = useRouter();
      const handleClick = async () => {
        try {
-         await axios.post(`${baseUrl}/api/login`, {
+         await axios.post('/api/login', {
            username,
            password,
          });
