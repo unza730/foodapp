@@ -3,58 +3,31 @@ import React from 'react'
 export default function Footer() {
   return (
     <div>
-      <footer className=" text-[#FAEBEFFF] body-font">
-        <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-            <div className="lg:w-1/4 md:w-1/2 w-full  px-4 cursor-pointer">
-              <h2 className="title-font font-medium text-[#FAEBEFFF] tracking-widest text-sm mb-3">
+      <footer className=" text-yellow-600 body-font">
+        <div className=" py-24   flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div className="flex-grow flex flex-wrap  -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div className="lg:w-1/4 md:w-1/2 w-full  cursor-pointer">
+              <h2 className="title-font font-medium text-yellow-600 tracking-widest text-sm mb-3 ">
                 CATEGORIES
               </h2>
               <nav className="list-none mb-10 space-y-3  ">
                 <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-1 my-5 rounded-md">
+                  <a className="text-yellow-600  hover:text-yellow-600   p-1 my-5 rounded-md r">
                     First Link
                   </a>
                 </li>
                 <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
+                  <a className="text-yellow-600  hover:text-yellow-600  hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md ">
                     Second Link
                   </a>
                 </li>
                 <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
+                  <a className="text-yellow-600  hover:text-yellow-600  hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
                     Third Link
                   </a>
                 </li>
                 <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
-                    Fourth Link
-                  </a>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full  px-4 cursor-pointer">
-              <h2 className="title-font font-medium text-[#FAEBEFFF] tracking-widest text-sm mb-3">
-                CATEGORIES
-              </h2>
-              <nav className="list-none mb-10 space-y-3  ">
-                <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-1 my-5 rounded-md">
-                    First Link
-                  </a>
-                </li>
-                <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
-                    Second Link
-                  </a>
-                </li>
-                <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
-                    Third Link
-                  </a>
-                </li>
-                <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
+                  <a className="text-yellow-600  hover:text-yellow-600  hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
                     Fourth Link
                   </a>
                 </li>
@@ -62,54 +35,82 @@ export default function Footer() {
             </div>
 
             <div className="lg:w-1/4 md:w-1/2 w-full  px-4 cursor-pointer">
-              <h2 className="title-font font-medium text-[#FAEBEFFF] tracking-widest text-sm mb-3">
+              <h2 className="title-font font-medium text-yellow-600 tracking-widest text-sm mb-3">
                 CATEGORIES
               </h2>
               <nav className="list-none mb-10 space-y-3  ">
                 <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-1 my-5 rounded-md">
+                  <a className="text-yellow-600 hover:text-yellow-600 hover:bg-[#FAEBEFFF] p-1 my-5 rounded-md">
                     First Link
                   </a>
                 </li>
                 <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
+                  <a className="text-yellow-600 hover:text-yellow-600  hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
                     Second Link
                   </a>
                 </li>
                 <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
+                  <a className="text-yellow-600 hover:text-yellow-600 hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
                     Third Link
                   </a>
                 </li>
                 <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
+                  <a className="text-yellow-600  hover:text-yellow-600  hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
+                    Fourth Link
+                  </a>
+                </li>
+              </nav>
+            </div>
+
+            <div className="lg:w-1/4 md:w-1/2 w-full  px-4 cursor-pointer">
+              <h2 className="title-font font-medium text-yellow-600 tracking-widest text-sm mb-3">
+                CATEGORIES
+              </h2>
+              <nav className="list-none mb-10 space-y-3  ">
+                <li>
+                  <a className="text-yellow-600 hover:text-yellow-600  hover:bg-[#FAEBEFFF] p-1 my-5 rounded-md">
+                    First Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-yellow-600 hover:text-yellow-600  hover:text-yellow-600  hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
+                    Second Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-yellow-600 hover:text-yellow-600  hover:text-yellow-600  hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
+                    Third Link
+                  </a>
+                </li>
+                <li>
+                  <a className="text-yellow-600 hover:text-yellow-600  hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
                     Fourth Link
                   </a>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full  px-4 cursor-pointer">
-              <h2 className="title-font font-medium text-[#FAEBEFFF] tracking-widest text-sm mb-3">
+              <h2 className="title-font font-medium text-yellow-600 tracking-widest text-sm mb-3">
                 CATEGORIES
               </h2>
               <nav className="list-none mb-10 space-y-3  ">
                 <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-1 my-5 rounded-md">
+                  <a className="text-yellow-600 hover:text-yellow-600  hover:bg-[#FAEBEFFF] p-1 my-5 rounded-md">
                     First Link
                   </a>
                 </li>
                 <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
+                  <a className="text-yellow-600 hover:text-yellow-600  hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
                     Second Link
                   </a>
                 </li>
                 <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
+                  <a className="text-yellow-600  hover:text-yellow-600  hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
                     Third Link
                   </a>
                 </li>
                 <li>
-                  <a className="text-[#FAEBEFFF] hover:text-[#333D79FF] hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
+                  <a className="text-yellow-600  hover:text-yellow-600  hover:bg-[#FAEBEFFF] p-2 my-5 rounded-md">
                     Fourth Link
                   </a>
                 </li>
@@ -118,20 +119,20 @@ export default function Footer() {
           </div>
         </div>
         <div className="bg-[#333D79FF]">
-          <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p className="text-[#FAEBEFFF] text-sm text-center sm:text-left">
+          {/* <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p className="text-yellow-600 text-sm text-center sm:text-left">
               © 2020 Tailblocks —
               <a
                 href="https://twitter.com/knyttneve"
                 rel="noopener noreferrer"
-                className="text-[#FAEBEFFF] ml-1"
+                className="text-yellow-600 ml-1"
                 target="_blank"
               >
                 @knyttneve
               </a>
-            </p>
-            {/* <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-              <a className="text-[#FAEBEFFF]">
+            </p> */}
+          {/* <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a className="text-yellow-500">
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"
@@ -143,7 +144,7 @@ export default function Footer() {
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                 </svg>
               </a>
-              <a className="ml-3 text-[#FAEBEFFF]">
+              <a className="ml-3 text-yellow-500">
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"
@@ -155,7 +156,7 @@ export default function Footer() {
                   <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                 </svg>
               </a>
-              <a className="ml-3 text-[#FAEBEFFF]">
+              <a className="ml-3 text-yellow-500">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -169,7 +170,7 @@ export default function Footer() {
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                 </svg>
               </a>
-              <a className="ml-3 text-[#FAEBEFFF]">
+              <a className="ml-3 text-yellow-500">
                 <svg
                   fill="currentColor"
                   stroke="currentColor"
@@ -188,7 +189,7 @@ export default function Footer() {
               </a>
             </span>
           */}
-          </div>
+          {/* </div> */}
         </div>
       </footer>
     </div>

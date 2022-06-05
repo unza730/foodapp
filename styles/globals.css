@@ -4,8 +4,13 @@
 
 @layer base {
   body {
-    @apply bg-[#333D79FF]; 
-  }
+    /* @apply bg-[#4e170b] */
+    /* @apply bg-[#351c02] */
+    
+    /* @apply  bg-[#272643] */
+    @apply bg-black
+    
+   }
 }
 /* html,
 body {
@@ -17,3 +22,5 @@ body {
 } */
 
 
+
+/* BASE_URL = https://foodappp.vercel.app */

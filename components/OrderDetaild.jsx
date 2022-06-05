@@ -9,7 +9,7 @@ const OrderDetaild = ({ total, createOrder }) => {
       console.log(createOrder);
     }
   return (
-    <div className=" w-3/4 mx-auto   top-36 left-0 absolute z-[999] flex justify-center items-center">
+    <div className=" w-3/4 mx-auto top-36  absolute z-[999] flex justify-center items-center">
       <section className="text-blue-900 bg-gray-300  body-font relative ">
         <div className="container px-5 py-6 mx-auto">
           <div className="flex flex-col text-center w-full">

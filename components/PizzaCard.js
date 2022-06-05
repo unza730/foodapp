@@ -3,11 +3,10 @@ import Link from 'next/link';
 const PizzaCard = ({pizza}) => {
   return (
     <div>
-      <section className="text-white  body-font">
+      <section className="text-white body-font">
         <div className="container px-5 py-9 mx-auto ">
-        
           <div className="flex flex-col flex-wrap -m-4 ">
-            <div className="p-3 w-4/5 lg:w-80 md:w-full  bg-[#FAEBEFFF] rounded-md border border-1 border-r-yellow-800">
+            <div className="p-3 w-4/5 cursor-pointer lg:w-80 md:w-full bg-white    opacity-1 rounded-md border border-1 border-r-yellow-800 h-full w-full  rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 ">
               <div className="h-full flex flex-col items-center text-center ">
                 <Link href={`/product/${pizza._id}`}>
                   <img
@@ -17,15 +16,15 @@ const PizzaCard = ({pizza}) => {
                   />
                 </Link>
                 <div className="w-full">
-                  <h2 className="title-font font-medium text-lg  text-[#333D79FF] ">
+                  <h2 className="title-font font-bold text-lg  text-yellow-600 ">
                     {pizza.title}
                   </h2>
-                  <h3 className="text-[#333D79FF] mb-3">${pizza.price[0]}</h3>
-                  <p className="mb-4 text-[#333D79FF] w-full h-50 truncate">
+                  <h3 className="text-yellow-600 font-bold mb-3">${pizza.price[0]}</h3>
+                  <p className="mb-4 text-yellow-600 w-full h-50 truncate">
                     {pizza.description}
                   </p>
                   {/* <span className="inline-flex">
-                    <a className="text-[#333D79FF]">
+                    <a className="text-white">
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -38,7 +37,7 @@ const PizzaCard = ({pizza}) => {
                         <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                       </svg>
                     </a>
-                    <a className="ml-2 text-[#333D79FF]">
+                    <a className="ml-2 text-white">
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -51,7 +50,7 @@ const PizzaCard = ({pizza}) => {
                         <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                       </svg>
                     </a>
-                    <a className="ml-2 text-[#333D79FF]">
+                    <a className="ml-2 text-white">
                       <svg
                         fill="none"
                         stroke="currentColor"

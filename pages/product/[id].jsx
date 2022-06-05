@@ -39,23 +39,22 @@ const Product = ({ pizza }) => {
   console.log(extras)
   return (
     <div>
-      <section className="text-white body-font overflow-hidden">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="lg:w-4/5 mx-auto flex flex-wrap">
+      <section className="text-yellow-500   body-font overflow-hidden">
+        <div className="container  px-5  py-24 mx-auto">
+          <div className="lg:w-4/5 mx-auto   opacity-[1px] flex flex-wrap">
             <img
               alt="ecommerce"
               className="lg:w-3/6 w-full lg:h-auto h-64 object-cover object-center rounded"
               src={pizza.img}
             />
-            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+            <div className="lg:w-1/2 w-full h-full w-full bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-gray-100 border   lg:pl-10 lg:py-6  mt-1  px-7 py-7 lg:px-0  lg:mt-0">
               {/* <h2 className="text-sm title-font text-gray-500 tracking-widest">Title</h2> */}
-              <h1 className="text-white text-3xl title-font font-medium mb-1">
+              <h1 className="text-yellow-500 text-3xl title-font font-medium mb-1">
                 Title
               </h1>
               <div className="flex mb-4">
                 <span className="flex items-center">
-                 
-                  <h1 className="text-white text-2xl">${price}</h1>
+                  <h1 className="text-yellow-500 text-2xl">${price}</h1>
                 </span>
               </div>
               <p className="leading-relaxed">{pizza.description}</p>
@@ -100,9 +99,8 @@ const Product = ({ pizza }) => {
                     Large
                   </span>
                 </div>
-             
               </div>
-            
+
               <div className="">
                 <h2 className="text-2xl">Choose Additional ingredients</h2>
                 <div className="flex ">
@@ -122,16 +120,23 @@ const Product = ({ pizza }) => {
                     </div>
                   ))}
                 </div>
-                
               </div>
               <div className="flex justify-between w-3/6 mt-4">
                 <span className="title-font font-medium text-2xl text-gray-900">
-                  <input type="number" name="" id="" className="w-12" onChange={(e)=>setQuantity(e.target.value) } />
+                  <input
+                    type="number"
+                    name=""
+                    id=""
+                    className="w-12"
+                    onChange={(e) => setQuantity(e.target.value)}
+                  />
                 </span>
-                <button className=" text-white bg-indigo-500 border-0 p-1 focus:outline-none hover:bg-indigo-600 rounded" onClick={handleClick}>
+                <button
+                  className=" text-white px-2 bg-yellow-600 border-0 p-1 focus:outline-none  rounded"
+                  onClick={handleClick}
+                >
                   Add to Cart
                 </button>
-             
               </div>
             </div>
           </div>

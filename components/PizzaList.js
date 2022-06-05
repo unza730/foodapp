@@ -6,7 +6,7 @@ const PizzaList = ({pizzaList}) => {
     <div>
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
-          <h1 className="text-2xl font-medium title-font mb-4 text-white">
+          <h1 className="text-2xl font-medium title-font mb-4 text-[#FAEBEFFF]">
             The Best Pizza In Town
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-white">
@@ -19,11 +19,8 @@ const PizzaList = ({pizzaList}) => {
 
         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-5 space-x-1 lg:mx-auto">
           {pizzaList.map((pizza) => (
-          
             <PizzaCard key={pizza._id} pizza={pizza} />
-           
           ))}
-         
         </div>
       </div>
     </div>

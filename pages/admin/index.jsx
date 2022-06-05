@@ -10,7 +10,7 @@ const Index = ({ order, product }) => {
   console.log(status);
   const handleDelete = async (id) => {
     try {
-      const res = await axios.delete(`${baseUrl}/api/products/${id}`)
+      const res = await axios.delete(`/api/products/${id}`)
       setPizzaList(pizzaList.filter((pizza => pizza._id !== id)));
     } catch (err) {
       console.log(err)
@@ -18,12 +18,13 @@ const Index = ({ order, product }) => {
   }
   return (
     <div className="">
-      <Link href="/admin/add" passHref="">
-        <button className="bg-white text-blue-900 p-3 ml-8">Add Product</button>
+      <Link href="/admin/add">
+        <button className="bg-white text-yellow-600 p-3 ml-8">
+          Add Product
+        </button>
       </Link>
       <section className="text-white body-font py-8">
-     
-        <div className="mx-3 flex gap-3 bg-gray-200 py-24 ">
+        <div className="mx-3 flex gap-3 bg-gray-200 py-24 shadow-md rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 text-white ">
           <div className="lg:w-2/3 w-full  overflow-auto">
             <table className="table-auto w-full text-left whitespace-no-wrap">
               <thead>
@@ -61,12 +62,12 @@ const Index = ({ order, product }) => {
                     <td className="px-4 py-3 text-lg text-blue-900">
                       {product.price[0]}
                     </td>
-                    <td className="w-full text-center flex cursor-pointer py-4">
-                      <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500  dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                    <td className="w-full text-center cursor-pointer py-4">
+                      {/* <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500  dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                         <span className="relative px-3 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                           Edit
                         </span>
-                      </button>
+                      </button> */}
                       <button
                         className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500  dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
                         onClick={() => handleDelete(product._id)}
@@ -88,7 +89,6 @@ const Index = ({ order, product }) => {
                   Orders
                 </h1>
                 <tr>
-               
                   <th className="px-4 py-3 title-font tracking-wider font-medium text-blue-900 text-sm bg-gray-100">
                     Id
                   </th>
@@ -101,7 +101,6 @@ const Index = ({ order, product }) => {
                   <th className="px-4 py-3 title-font tracking-wider font-medium text-blue-900 text-sm bg-gray-100">
                     payment
                   </th>
-               
                 </tr>
               </thead>
               {orderList.map((order) => (
@@ -121,7 +120,6 @@ const Index = ({ order, product }) => {
                         <span>paid</span>
                       )}
                     </td>
-                  
                   </tr>
                 </tbody>
               ))}
