@@ -23,28 +23,28 @@ const Index = ({ order, product }) => {
           Add Product
         </button>
       </Link>
-      <section className="text-white body-font py-8">
+      <section className="text-white body-font py-4">
         <div className="mx-3 flex gap-3 bg-gray-200 py-24 shadow-md rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 text-white ">
           <div className="lg:w-2/3 w-full  overflow-auto">
             <table className="table-auto w-full text-left whitespace-no-wrap">
               <thead>
-                <h1 className="text-blue-900 mx-6 font-bold text-3xl">
+                <h1 className="text-yellow-600 mx-6 font-bold text-3xl">
                   Product
                 </h1>
                 <tr>
-                  <th className="px-4 py-3 title-font tracking-wider font-medium text-blue-900 text-sm bg-gray-100 rounded-tl rounded-bl">
+                  <th className="px-4 py-3 title-font tracking-wider font-medium text-yellow-600 text-sm bg-gray-100 rounded-tl rounded-bl">
                     Image
                   </th>
-                  <th className="px-4 py-3 title-font tracking-wider font-medium text-blue-900 text-sm bg-gray-100">
+                  <th className="px-4 py-3 title-font tracking-wider font-medium text-yellow-600 text-sm bg-gray-100">
                     Id
                   </th>
-                  <th className="px-4 py-3 title-font tracking-wider font-medium text-blue-900 text-sm bg-gray-100">
+                  <th className="px-4 py-3 title-font tracking-wider font-medium text-yellow-600 text-sm bg-gray-100">
                     Title
                   </th>
-                  <th className="px-4 py-3 title-font tracking-wider font-medium text-blue-900 text-sm bg-gray-100">
+                  <th className="px-4 py-3 title-font tracking-wider font-medium text-yellow-600 text-sm bg-gray-100">
                     Price
                   </th>
-                  <th className="px-4 py-3 title-font tracking-wider font-medium text-blue-900 text-sm bg-gray-100">
+                  <th className="px-4 py-3 title-font tracking-wider font-medium text-yellow-600 text-sm bg-gray-100">
                     Action
                   </th>
                 </tr>
@@ -52,14 +52,14 @@ const Index = ({ order, product }) => {
               {pizzaList.map((product) => (
                 <tbody key={product._id}>
                   <tr key={product._id}>
-                    <td className="px-4 py-3 text-blue-900">
+                    <td className="px-4 py-3 text-yellow-600">
                       <img src={product.img} alt="" />
                     </td>
-                    <td className="px-4 py-3 text-blue-900">
+                    <td className="px-4 py-3 text-yellow-600">
                       {product._id.slice(1, 5)}...
                     </td>
-                    <td className="px-4 py-3 text-blue-900">{product.title}</td>
-                    <td className="px-4 py-3 text-lg text-blue-900">
+                    <td className="px-4 py-3 text-yellow-600">{product.title}</td>
+                    <td className="px-4 py-3 text-lg text-yellow-600">
                       {product.price[0]}
                     </td>
                     <td className="w-full text-center cursor-pointer py-4">
@@ -85,20 +85,20 @@ const Index = ({ order, product }) => {
           <div className="lg:w-2/3 w-full mx-auto overflow-auto">
             <table className="table-auto w-full text-left whitespace-no-wrap">
               <thead>
-                <h1 className="text-blue-900 mx-6 font-bold text-3xl">
+                <h1 className="text-yellow-600 mx-6 font-bold text-3xl">
                   Orders
                 </h1>
                 <tr>
-                  <th className="px-4 py-3 title-font tracking-wider font-medium text-blue-900 text-sm bg-gray-100">
+                  <th className="px-4 py-3 title-font tracking-wider font-medium text-yellow-600 text-sm bg-gray-100">
                     Id
                   </th>
-                  <th className="px-4 py-3 title-font tracking-wider font-medium text-blue-900 text-sm bg-gray-100">
+                  <th className="px-4 py-3 title-font tracking-wider font-medium text-yellow-600 text-sm bg-gray-100">
                     Customer
                   </th>
-                  <th className="px-4 py-3 title-font tracking-wider font-medium text-blue-900 text-sm bg-gray-100">
+                  <th className="px-4 py-3 title-font tracking-wider font-medium text-yellow-600 text-sm bg-gray-100">
                     Total
                   </th>
-                  <th className="px-4 py-3 title-font tracking-wider font-medium text-blue-900 text-sm bg-gray-100">
+                  <th className="px-4 py-3 title-font tracking-wider font-medium text-yellow-600 text-sm bg-gray-100">
                     payment
                   </th>
                 </tr>
@@ -106,14 +106,14 @@ const Index = ({ order, product }) => {
               {orderList.map((order) => (
                 <tbody key={order._id}>
                   <tr key={order._id}>
-                    <td className="px-4 py-3 text-blue-900">
+                    <td className="px-4 py-3 text-yellow-600">
                       {order._id.slice(0, 5)}
                     </td>
-                    <td className="px-4 py-3 text-blue-900">
+                    <td className="px-4 py-3 text-yellow-600">
                       {order.customer}
                     </td>
-                    <td className="px-4 py-3 text-blue-900">${order.total} </td>
-                    <td className="px-4 py-3 text-lg text-blue-900">
+                    <td className="px-4 py-3 text-yellow-600">${order.total} </td>
+                    <td className="px-4 py-3 text-lg text-yellow-600">
                       {order.method === 0 ? (
                         <span>cash</span>
                       ) : (
