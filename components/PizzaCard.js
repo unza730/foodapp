@@ -4,7 +4,7 @@ const PizzaCard = ({pizza}) => {
   return (
     <div>
       <section className="text-white body-font">
-        <div className="container px-5 py-9 mx-auto ">
+        <div className="container md:px-5 md:py-9 mx-auto ">
           <div className="flex flex-col flex-wrap -m-4 ">
             <div className="p-3 w-full cursor-pointer lg:w-80 md:w-full bg-white    opacity-1 rounded-md border border-1 border-r-yellow-800 h-full w-full  rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 ">
               <div className="h-full flex flex-col items-center text-center ">
@@ -19,7 +19,9 @@ const PizzaCard = ({pizza}) => {
                   <h2 className="title-font font-bold text-lg  text-yellow-600 ">
                     {pizza.title}
                   </h2>
-                  <h3 className="text-yellow-600 font-bold mb-3">${pizza.price[0]}</h3>
+                  <h3 className="text-yellow-600 font-bold mb-3">
+                    ${pizza.price[0]}
+                  </h3>
                   <p className="mb-4 text-yellow-600 w-full h-50 truncate">
                     {pizza.description}
                   </p>
