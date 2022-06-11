@@ -42,7 +42,7 @@ const Add = () => {
         extra,
         extraOptions,
       };
-      await axios.post("/api/products", newProduct);
+      await axios.post('/api/products', newProduct);
       // router.push(`${baseUrl}`);
       console.log("SuccessFully Added!");
       router.push('/');

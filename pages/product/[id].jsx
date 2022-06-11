@@ -121,7 +121,7 @@ const Product = ({ pizza }) => {
                   ))}
                 </div>
               </div>
-              <div className="flex justify-between w-3/6 mt-4">
+              <div className="flex gap-4 mt-4">
                 <span className="title-font font-medium text-2xl text-gray-900">
                   <input
                     type="number"

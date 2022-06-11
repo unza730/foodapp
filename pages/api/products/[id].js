@@ -2,9 +2,9 @@ import Product from "../../../models/Product";
 import dbConnect from "../../../util/mongo";
 import Cors from 'cors';
 
-  const cors = Cors({
-    methods: ["GET", "HEAD", "POST", "PUT", "DELETE"],
-  });
+  // const cors = Cors({
+  //   methods: ["GET", "HEAD", "POST", "PUT", "DELETE"],
+  // });
 
 export default async function handler(req, res) {
   

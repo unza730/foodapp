@@ -6,7 +6,7 @@ const PizzaCard = ({pizza}) => {
       <section className="text-white body-font">
         <div className="container px-5 py-9 mx-auto ">
           <div className="flex flex-col flex-wrap -m-4 ">
-            <div className="p-3 w-4/5 cursor-pointer lg:w-80 md:w-full bg-white    opacity-1 rounded-md border border-1 border-r-yellow-800 h-full w-full  rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 ">
+            <div className="p-3 w-full cursor-pointer lg:w-80 md:w-full bg-white    opacity-1 rounded-md border border-1 border-r-yellow-800 h-full w-full  rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 ">
               <div className="h-full flex flex-col items-center text-center ">
                 <Link href={`/product/${pizza._id}`}>
                   <img
