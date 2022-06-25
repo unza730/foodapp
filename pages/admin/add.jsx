@@ -2,6 +2,7 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import { useState } from "react";
 const baseUrl = process.env.BASE_URL;
+import { useNavigate, useParams } from "react-router-dom";
 
 const Add = () => {
   const [file, setFile] = useState(null);
@@ -11,6 +12,8 @@ const Add = () => {
   const [extra, setExtra] = useState("");
   const [extraOptions, setExtraOptions] = useState([]);
   const router = useRouter();
+   const { id } = useParams();
+  
   const handleExtraInput = (e) => {
     setExtra({ ...extra, [e.target.name]: e.target.value });
   };
@@ -44,7 +47,7 @@ const Add = () => {
       };
       await axios.post('/api/products', newProduct);
       // router.push(`${baseUrl}`);
-      console.log("SuccessFully Added!");
+      console.log("SuccessFully Updated!");
       router.push('/');
      
     } catch (err) {
