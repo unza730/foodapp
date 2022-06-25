@@ -43,7 +43,7 @@ const Add = ({ pizza }) => {
         extra,
         extraOptions,
       };
-      await axios.put(`/api/products/${pizza._id}`, newProduct);
+      await axios.put(`${baseUrl}/api/products/${pizza._id}`, newProduct);
       // router.push(`${baseUrl}`);
       console.log("SuccessFully Added!");
       router.push('/');
