@@ -194,7 +194,7 @@ const Add = ({ pizza }) => {
   );
 };
 export const getServerSideProps = async ({ params }) => {
-  const res = await axios.get(`/api/products/${params.id}`);
+  const res = await axios.get(`${baseUrl}/api/products/${params.id}`);
   return {
     props: {
       pizza: res.data,
